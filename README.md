@@ -28,25 +28,25 @@ A powerful Task Management API built with GraphQL, Node.js, Express, and Apollo 
 
 ## 🚀 Local Installation
 
-1. **Clone the repository**
-```bash
+1. "**"Clone the repository**
+
 git clone https://github.com/FawzElHouda/tp-graphql.git
 cd tp-graphql
 
-2. Install dependencies:
+2. **Install dependencies**
 npm install
 
-3.Start the server
+3.**Start the server**
 node index.js
 
 
-4.Open Apollo Sandbox
+4.**Open Apollo Sandbox**
 http://localhost:5000/graphql
 
 
-📖 GraphQL API Documentation
+**📖 GraphQL API Documentation**
 Queries
-Get all tasks:
+**Get all tasks:**
 query {
   tasks {
     id
@@ -57,7 +57,7 @@ query {
   }
 }
 
-Get a single task by ID:
+**Get a single task by ID:**
 query {
   task(id: "1") {
     id
@@ -69,15 +69,15 @@ query {
 }
 
 
-Mutations
-Add a new task:
+**Mutations**
+**Add a new task:**
 mutation {
   addTask(
     title: "Learn GraphQL"
     description: "Complete the GraphQL tutorial"
     completed: false
     duration: 5
-  ) {
+) {
     id
     title
     description
@@ -86,7 +86,7 @@ mutation {
   }
 }
 
-Mark a task as completed:
+**Mark a task as completed:**
 mutation {
   completeTask(id: "1") {
     id
@@ -95,7 +95,7 @@ mutation {
   }
 }
 
-Change task description:
+**Change task description:**
 mutation {
   changeDescription(
     id: "1"
@@ -107,7 +107,7 @@ mutation {
   }
 }
 
-Delete a task:
+**Delete a task:**
 mutation {
   deleteTask(id: "2") {
     id
@@ -116,16 +116,16 @@ mutation {
 }
 
 
-🧪 Testing with Postman
-1.Create a new request
+**🧪 Testing with Postman**
+**1.Create a new request**
 
 Method: POST
 URL: http://localhost:5000/graphql
 
-2.Set Headers:
+**2.Set Headers:**
 Content-Type: application/json
 
-3.Body (raw JSON):
+**3.Body (raw JSON):**
 {
   "query": "query { tasks { id title description completed duration } }"
 }
